@@ -12,6 +12,8 @@ import PersonAdd from '@mui/icons-material/PersonAdd';
 import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 
+import { Outlet, Link } from 'react-router-dom';
+
 export default function Container() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -39,6 +41,7 @@ export default function Container() {
             textAlign: 'center',
           }}
         >
+          <Typography sx={{ minWidth: 100 }}>Registrar Orden de Compra</Typography>
           <Typography sx={{ minWidth: 100 }}>Almacen</Typography>
           <Typography sx={{ minWidth: 100 }}>Clientes</Typography>
           <Typography sx={{ minWidth: 100 }}>Cuentas</Typography>
