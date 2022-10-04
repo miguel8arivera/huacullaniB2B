@@ -4,3 +4,10 @@ export type FormProductRegister = {
   password: string;
   password_confirmation: string;
 };
+
+export type FormFormikbasic = {
+  firstName: string;
+  lastName: string;
+  email: string;
+  onSubmit?: () => void;
+};

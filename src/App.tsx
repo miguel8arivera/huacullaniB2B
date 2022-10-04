@@ -1,9 +1,10 @@
 import Container from './components/Container';
+import Navigation from './routes/Navigation';
 
 function App() {
   return (
     <div>
-      <Container />
+      <Navigation />
     </div>
   );
 }
